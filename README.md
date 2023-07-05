@@ -1,2 +1,2 @@
 # landing-page
-My first landing page-prototype.
+My first restaurant landing-page.
