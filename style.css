@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap');
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 .header {
     display: flex;
     justify-content: flex-end;
@@ -7,11 +13,19 @@
     color: white;
     font-family: 'Outfit', sans-serif;
     width: 100%;
+    height: 100px;
+}
+
+.logo {
+    display: flex;
+    align-self: start;
 }
 
 #logoPic {
-    width: 10%;
-    height: auto;
+    width: auto;
+    height: 80px;
+    display: flex;
+    
 }
 
 a {
