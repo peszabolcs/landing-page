@@ -69,28 +69,30 @@ a:hover {
   min-height: 90vh;
 }
 
-.hero {
+/* .hero {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   width: 1200px;
   margin: 0 20px;
-}
+} */
 
 .mainHeroText {
   font-size: 58px;
   font-weight: 800;
   color: #f9faf8;
-  width: 500px;
+  max-width: 600px;
+  margin-right: 20px;
 }
 
 .secondaryHeroText {
   font-size: 24px;
   color: #e5e7eb;
-  width: 500px;
+  max-width: 600px;
+  margin-right: 20px;
 }
 
-.heroPicture {
+/* .heroPicture {
   position: relative;
   margin-top: 20px;
   width: 100%;
@@ -101,6 +103,30 @@ a:hover {
   min-height: 300px;
   max-height: 500px;
   border-radius: 7px;
+} */
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.heroPicture {
+  margin-top: 20px;
+  max-width: 500px;
+  width: 100%;
+}
+
+#heroPicture {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  border-radius: 7px;
+  height: auto;
 }
 
 #signUpButton {
@@ -293,8 +319,9 @@ footer {
   }
 
   .heroPicture {
-    position: relative;
     margin: 20px 0;
+    width: 100%;
+    max-width: 80%;
   }
 
   .quoteTexts {
@@ -328,6 +355,12 @@ footer {
 
   .secondaryHeroText {
     font-size: 14px;
+  }
+
+  .heroPicture {
+    margin: 20px 0;
+    width: 100%;
+    max-width: 50%;
   }
 
   .quoteTexts {
