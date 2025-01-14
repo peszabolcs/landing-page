@@ -221,7 +221,7 @@ a:hover {
 .author1,
 .author2,
 .author3 {
-  width: 1200;
+  /*width: 1200;*/
   text-align: end;
   font-weight: 300;
   padding-right: 50px;
@@ -291,7 +291,7 @@ footer {
   color: #e5e7eb;
 }
 
-/* Media Queries */
+/* 768px alatti eszközök (pl. táblagépek) */
 @media (max-width: 768px) {
   .header {
     flex-direction: column;
@@ -312,10 +312,12 @@ footer {
 
   .mainHeroText {
     font-size: 28px;
+    text-align: center;
   }
 
   .secondaryHeroText {
     font-size: 16px;
+    text-align: center;
   }
 
   .heroPicture {
@@ -324,30 +326,21 @@ footer {
     max-width: 80%;
   }
 
+  .infoBoxContainer {
+    padding: 20px;
+  }
+
   .quoteTexts {
     font-size: 18px;
   }
 
-  .callToActionText {
-    font-size: 18px;
-  }
-
   .callToActionBox {
-    height: auto;
     padding: 20px;
-  }
-
-  .illustrations {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .illustrations img {
-    width: 80%;
-    max-width: 300px;
+    height: auto;
   }
 }
 
+/* 480px alatti eszközök (pl. okostelefonok) */
 @media (max-width: 480px) {
   .mainHeroText {
     font-size: 24px;
@@ -363,11 +356,419 @@ footer {
     max-width: 50%;
   }
 
+  .infoBoxHeader {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .illustrations img {
+    width: 90%;
+    max-width: 250px;
+  }
+
   .quoteTexts {
     font-size: 16px;
   }
 
-  .callToActionText {
+  .callToActionBox {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #bookButton {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+
+.coffeeListContainer {
+  display: flex;
+  background-color: #1f2937;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  min-height: 100vh;
+}
+
+.coffeeList {
+  display: block;
+  justify-content: center;
+}
+
+.coffeeItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.coffeeName {
+  font-size: 24px;
+  color: #f9faf8;
+  padding: 10px;
+  flex: 1;
+}
+
+.coffeeDescription {
+  font-size: 18px;
+  color: #e5e7eb;
+  flex: 2;
+  padding-left: 20px;
+}
+
+.coffeeItem img {
+  height: 100px;
+  width: 100px;
+  border-radius: 15px;
+  margin-right: 20px;
+}
+
+/* 768px alatti eszközök (pl. táblagépek) */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .links {
+    flex-direction: column;
+    align-items: center;
     font-size: 16px;
+  }
+
+  .coffeeListContainer {
+    padding: 20px;
+  }
+
+  .coffeeList {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .coffeeItem {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .coffeeItem img {
+    width: 80%;
+    max-width: 250px;
+    height: auto;
+  }
+
+  .coffeeName {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  .coffeeDescription {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+}
+
+/* 480px alatti eszközök (pl. okostelefonok) */
+@media (max-width: 480px) {
+  .coffeeItem img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+  }
+
+  .coffeeName {
+    font-size: 16px;
+  }
+
+  .coffeeDescription {
+    font-size: 12px;
+  }
+
+  .coffeeListContainer {
+    padding: 10px;
+  }
+}
+
+.logoText a {
+  text-decoration: none;
+  font-size: 1.17em;
+  font-weight: bold;
+}
+
+.storeLocationContainer {
+  display: flex;
+  background-color: #1f2937;
+  justify-content: center;
+  padding: 50px 0;
+  min-height: 100vh;
+}
+
+.storeLocation {
+  display: block;
+  justify-content: center;
+}
+
+.storeLocationHeader {
+  display: block;
+  font-size: 36px;
+  padding-bottom: 25px;
+  max-width: 1200px;
+  color: #ffffff;
+}
+
+.storeLocationList {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+  max-width: 1200px;
+  flex-direction: column;
+}
+
+.storeLocationItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.storeLocationName {
+  font-size: 24px;
+  color: #f9faf8;
+  padding: 10px;
+  flex: 1;
+}
+
+.storeLocationAddress {
+  font-size: 18px;
+  color: #e5e7eb;
+  flex: 2;
+  padding-left: 20px;
+}
+
+.storeLocationPhone {
+  font-size: 18px;
+  color: #e5e7eb;
+  flex: 2;
+  padding-left: 20px;
+}
+
+/* 768px alatti eszközök (pl. táblagépek) */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .links {
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+  }
+
+  .storeLocationContainer {
+    padding: 20px;
+  }
+
+  .storeLocationHeader h2 {
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .storeLocationList {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .storeLocationItem {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .storeLocationName {
+    font-size: 18px;
+  }
+
+  .storeLocationAddress,
+  .storeLocationPhone {
+    font-size: 16px;
+  }
+}
+
+/* 480px alatti eszközök (pl. okostelefonok) */
+@media (max-width: 480px) {
+  .storeLocationHeader h2 {
+    font-size: 20px;
+  }
+
+  .storeLocationItem {
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+
+  .storeLocationName {
+    font-size: 16px;
+  }
+
+  .storeLocationAddress,
+  .storeLocationPhone {
+    font-size: 14px;
+  }
+}
+
+.contactUsContainer {
+  display: flex;
+  background-color: #1f2937;
+  justify-content: center;
+  /*align-items: center;*/
+  padding: 50px 0;
+  min-height: 100vh;
+}
+
+.contact {
+  display: block;
+  justify-content: center;
+}
+
+.contactUsHeader {
+  display: block;
+  font-size: 36px;
+  padding-bottom: 25px;
+  max-width: 1200px;
+  color: #ffffff;
+}
+
+.contactUsText {
+  font-size: 24px;
+  color: #f9faf8;
+  padding: 10px;
+  flex: 1;
+}
+
+.contactUsForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.contactUsForm form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 7px;
+  background-color: #f9faf8;
+}
+
+.contactUsForm input, .contactUsForm textarea {
+  width: 300px;
+  height: 30px;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 7px;
+}
+
+.contactUsForm button {
+  background-color: #3882f6;
+  color: #f9faf8;
+  height: 45px;
+  width: 120px;
+  margin: 30px 0;
+  font-size: larger;
+  border-radius: 7px;
+}
+
+.contactUsForm button:hover {
+  cursor: pointer;
+  background-color: #f9faf8;
+  color: #3882f6;
+}
+
+/* 768px alatti eszközök (pl. táblagépek) */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .links {
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+  }
+
+  .contactUsContainer {
+    padding: 20px;
+  }
+
+  .contactUsHeader h1 {
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .contactUsText {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .contactUsForm form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .contactUsForm label {
+    font-size: 14px;
+  }
+
+  .contactUsForm input,
+  .contactUsForm textarea {
+    width: 100%;
+    margin: 10px 0;
+    font-size: 14px;
+  }
+
+  .contactUsForm button {
+    width: 100%;
+    font-size: 16px;
+  }
+}
+
+/* 480px alatti eszközök (pl. okostelefonok) */
+@media (max-width: 480px) {
+  .contactUsHeader h1 {
+    font-size: 20px;
+  }
+
+  .contactUsText {
+    font-size: 14px;
+  }
+
+  .contactUsForm form {
+    padding: 10px;
+  }
+
+  .contactUsForm input,
+  .contactUsForm textarea {
+    font-size: 12px;
+  }
+
+  .contactUsForm button {
+    font-size: 14px;
   }
 }
